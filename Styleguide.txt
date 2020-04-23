@@ -1,0 +1,12 @@
+html5   #e34f26
+CSS     #157286
+SASS    #CC6699
+JS      #F7DF1E
+AE      #D291FF
+PP      #EA77FF
+ILL     #FF7C00
+PS      #00C8FF
+
+XD      #FF2BC2
+
+Gradient:  linear-gradient(to right, #df89b5 0%, #bfd9fe 100%);
