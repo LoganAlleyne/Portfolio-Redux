@@ -33,6 +33,12 @@ window.onload = function setGradient() {
   document.getElementById("about-titleID").style.backgroundImage =
     window.gradientX;
   document.getElementById("nameID").style.backgroundImage = window.gradientX;
+  document.getElementById("devTopID").style.backgroundImage = window.gradientX;
+  document.getElementById("desTopID").style.backgroundImage = window.gradientX;
+  document.getElementById("othTopID").style.backgroundImage = window.gradientX;
+  document.getElementById("devIconID").style.backgroundImage = window.gradientX;
+  document.getElementById("desIconID").style.backgroundImage = window.gradientX;
+  document.getElementById("othIconID").style.backgroundImage = window.gradientX;
 };
 
 function navBackground(veiwX) {
