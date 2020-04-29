@@ -360,12 +360,11 @@
     -webkit-box-pack: none;
         -ms-flex-pack: none;
             justify-content: none;
-    padding: 4vh;
+    padding: 6vh;
   }
   .about .about-content {
     height: 100%;
-    width: 60vw;
-    padding-top: 5vh;
+    width: 80vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
