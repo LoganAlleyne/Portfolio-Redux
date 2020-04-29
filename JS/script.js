@@ -36,9 +36,8 @@ window.onload = function setGradient() {
   document.getElementById("devTopID").style.backgroundImage = window.gradientX;
   document.getElementById("desTopID").style.backgroundImage = window.gradientX;
   document.getElementById("othTopID").style.backgroundImage = window.gradientX;
-  document.getElementById("devIconID").style.backgroundImage = window.gradientX;
-  document.getElementById("desIconID").style.backgroundImage = window.gradientX;
-  document.getElementById("othIconID").style.backgroundImage = window.gradientX;
+  document.getElementById("skillsBorderID").style.backgroundImage =
+    window.gradientX;
 };
 
 function navBackground(veiwX) {
