@@ -205,6 +205,7 @@
       justify-content: center;
       align-items: none;
       transition: all 0.5s ease-in-out;
+      overflow-x: hidden;
 
       .nav-list li {
         padding: 3vh 0;
@@ -286,7 +287,7 @@
     }
 
     .title {
-      font-size: 8vh;
+      font-size: 7vh;
       .sub {
         top: 20vw;
         font-size: 3vh;
@@ -296,10 +297,10 @@
 
   .about {
     display: flex;
-    height: 80vh;
+    height: auto;
     align-items: initial;
     justify-content: none;
-    padding: 0vh;
+    padding: 4vh;
 
     .about-content {
       height: 100%;

@@ -258,6 +258,7 @@
             align-items: none;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
+    overflow-x: hidden;
   }
   .landing .nav .nav-list li {
     padding: 3vh 0;
@@ -342,7 +343,7 @@
     width: 5.5vh;
   }
   .landing .title {
-    font-size: 8vh;
+    font-size: 7vh;
   }
   .landing .title .sub {
     top: 20vw;
@@ -352,14 +353,14 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 80vh;
+    height: auto;
     -webkit-box-align: initial;
         -ms-flex-align: initial;
             align-items: initial;
     -webkit-box-pack: none;
         -ms-flex-pack: none;
             justify-content: none;
-    padding: 0vh;
+    padding: 4vh;
   }
   .about .about-content {
     height: 100%;
