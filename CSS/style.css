@@ -25,6 +25,12 @@
   display: block;
 }
 
+* body a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+}
+
 .themed-text {
   background-clip: text;
   -webkit-background-clip: text;
@@ -213,7 +219,7 @@
 
 .skills .skills-border .skills-container .skills-pannel .bottom {
   height: 70%;
-  font-size: 0.8vw;
+  font-size: 1vw;
   padding: 0 10% 10% 10%;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -238,10 +244,11 @@
 
 .skills .skills-border .skills-container .skills-pannel .bottom ul {
   list-style: none;
+  padding: 1%;
 }
 
 .skills .skills-border .skills-container .skills-pannel .bottom ul li {
-  padding: 0.25vh;
+  padding: 0.5%;
 }
 
 .skills .skills-border .skills-container .design {
@@ -467,7 +474,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
-    font-size: 2.5vh;
+    font-size: 2.5vw;
     -webkit-box-pack: initial;
         -ms-flex-pack: initial;
             justify-content: initial;
