@@ -147,6 +147,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #fafafa;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -154,6 +158,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 110vh;
+}
+
+.skills .title {
+  text-align: center;
+  font-size: 2.5vw;
+  width: 40%;
+  padding: 0 0 5vh 0;
 }
 
 .skills .skills-border {
@@ -257,42 +269,119 @@
 }
 
 .projects {
-  height: 60vh;
+  height: 85vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  overflow-x: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .projects .title {
   font-size: 2.5vw;
-  width: 60%;
-  overflow-x: hidden;
+  width: 40%;
+  padding: 5vh;
 }
 
-.projects .sub {
-  font-size: 1vw;
-  width: 70%;
+.projects .portfolio-container {
+  width: 90vw;
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-transition: 0.25s linear;
+  transition: 0.25s linear;
 }
 
-.projects .icon {
-  padding: 1vw;
-  width: 6vw;
+.projects .portfolio-container:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: 0.25s linear;
+  transition: 0.25s linear;
 }
 
-.projects .icon img {
+.projects .portfolio-container .portfolio-item {
+  background-color: #f7f7f7;
+  height: 100%;
+  width: 32%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 50% 40% 10%;
+      grid-template-rows: 50% 40% 10%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1%;
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 2px 5px #c9c9c9;
+          box-shadow: 3px 2px 5px #c9c9c9;
+  -webkit-transition: 0.25s linear;
+  transition: 0.25s linear;
+  -webkit-filter: brightness(0.95);
+          filter: brightness(0.95);
+}
+
+.projects .portfolio-container .portfolio-item:hover {
+  -webkit-transform: scale(1.11);
+          transform: scale(1.11);
+  -webkit-transition: 0.25s linear;
+  transition: 0.25s linear;
+  -webkit-filter: none;
+          filter: none;
+  z-index: 500;
+}
+
+.projects .portfolio-container .portfolio-item .portfolio-image {
+  height: 100%;
+}
+
+.projects .portfolio-container .portfolio-item .portfolio-image img {
+  height: auto;
   width: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+.projects .portfolio-container .portfolio-item .portfolio-description {
+  padding: 0 6% 0 6%;
+  font-size: 1vw;
+}
+
+.projects .portfolio-container .portfolio-item .portfolio-description h1 {
+  margin: 1% 0 3% 0;
+  font-size: 175%;
+}
+
+.projects .portfolio-container .portfolio-item .portfolio-description p {
+  margin: 1%;
+}
+
+.projects .portfolio-container .portfolio-item .portfolio-links {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1vw;
+}
+
+.projects .portfolio-container .portfolio-item .portfolio-links a {
+  color: #383838;
+  font-style: bold;
+  vertical-align: middle;
+  height: 75%;
+}
+
+.projects .portfolio-container .portfolio-item .portfolio-links a img {
+  height: 75%;
+  vertical-align: middle;
 }
 
 .footer {
@@ -385,8 +474,8 @@
   }
   .landing .nav-toggle {
     position: absolute;
-    left: 85vw;
-    top: 3vw;
+    left: 83%;
+    top: 90%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -474,14 +563,14 @@
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
-    font-size: 2.5vw;
+    font-size: 2vh;
     -webkit-box-pack: initial;
         -ms-flex-pack: initial;
             justify-content: initial;
   }
   .about .about-content .about-title {
     width: auto;
-    font-size: 6vh;
+    font-size: 5vh;
     padding-bottom: 3vh;
   }
   .skills {
@@ -495,11 +584,18 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 250vh;
+    height: auto;
+  }
+  .skills .title {
+    font-size: 5vh;
+    margin: 4vh;
+    padding: 0;
+    width: 100%;
   }
   .skills .skills-border {
     border-radius: 1vw;
     padding: 0.5vw;
+    margin-bottom: 10%;
   }
   .skills .skills-border .skills-container {
     display: -ms-grid;
@@ -549,13 +645,12 @@
   }
   .skills .skills-border .skills-container .skills-pannel .top {
     height: 10%;
+    font-size: 4vh;
   }
   .skills .skills-border .skills-container .skills-pannel .middle {
     height: 14vh;
-    padding: 5%;
-  }
-  .skills .skills-border .skills-container .skills-pannel .middle img {
-    height: 70%;
+    width: 100% img;
+    width-height: 70%;
   }
   .skills .skills-border .skills-container .skills-pannel .bottom {
     height: 70%;
@@ -577,11 +672,12 @@
     list-style: none;
   }
   .skills .skills-border .skills-container .design {
+    border: 0;
     border-top: 0.01vw solid #adadad;
     border-bottom: 0.01vw solid #adadad;
   }
   .projects {
-    height: 60vh;
+    height: 250vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -599,17 +695,99 @@
   .projects .title {
     font-size: 4vh;
     width: auto;
-    padding: 0 0 2vh 0;
+    padding: 0 0 0 0;
+    margin-top: 3vh;
   }
-  .projects .sub {
+  .projects .portfolio-container {
+    width: 80vw;
+    height: 300vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-transition: 0.25s linear;
+    transition: 0.25s linear;
+  }
+  .projects .portfolio-container:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: 0 linear;
+    transition: 0 linear;
+  }
+  .projects .portfolio-container .portfolio-item {
+    background-color: #f7f7f7;
+    height: 75vh;
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 35% 50% 15%;
+        grid-template-rows: 35% 50% 15%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 5%;
+    margin: 5%;
+    border-radius: 10px;
+    -webkit-box-shadow: 3px 2px 5px #c9c9c9;
+            box-shadow: 3px 2px 5px #c9c9c9;
+    -webkit-transition: 0.25s linear;
+    transition: 0.25s linear;
+    -webkit-filter: brightness(1);
+            filter: brightness(1);
+  }
+  .projects .portfolio-container .portfolio-item:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: 0;
+    transition: 0;
+    -webkit-filter: none;
+            filter: none;
+    z-index: 500;
+  }
+  .projects .portfolio-container .portfolio-item .portfolio-image {
+    height: 100%;
+  }
+  .projects .portfolio-container .portfolio-item .portfolio-image img {
+    height: auto;
+    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 6px;
+  }
+  .projects .portfolio-container .portfolio-item .portfolio-description {
+    padding: 0 6% 0 6%;
     font-size: 2vh;
   }
-  .projects .icon {
-    padding: 1vh;
-    width: 6vh;
+  .projects .portfolio-container .portfolio-item .portfolio-description h1 {
+    margin: 1% 0 3% 0;
+    font-size: 175%;
   }
-  .projects .icon img {
-    width: 100%;
+  .projects .portfolio-container .portfolio-item .portfolio-description p {
+    margin: 1%;
+  }
+  .projects .portfolio-container .portfolio-item .portfolio-links {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.8vh;
+  }
+  .projects .portfolio-container .portfolio-item .portfolio-links a {
+    color: #383838;
+    font-style: bold;
+    vertical-align: middle;
+    height: 75%;
+  }
+  .projects .portfolio-container .portfolio-item .portfolio-links a img {
+    height: 75%;
+    vertical-align: middle;
   }
   .footer {
     color: rgba(255, 255, 255, 0.75);

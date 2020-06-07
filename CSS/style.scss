@@ -127,9 +127,18 @@
 
 .skills {
   display: flex;
+  flex-direction: column;
   background-color: rgb(250, 250, 250);
   justify-content: center;
   align-items: center;
+  height: 110vh;
+
+  .title {
+    text-align: center;
+    font-size: 2.5vw;
+    width: 40%;
+    padding: 0 0 5vh 0;
+  }
 
   .skills-border {
     border-radius: 1vw;
@@ -211,30 +220,89 @@
 }
 
 .projects {
-  height: 60vh;
+  height: 85vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
-  overflow-x: hidden;
+  flex-direction: column;
 
   .title {
     font-size: 2.5vw;
-    width: 60%;
-    overflow-x: hidden;
+    width: 40%;
+    padding: 5vh;
   }
 
-  .sub {
-    font-size: 1vw;
-    width: 70%;
-  }
+  .portfolio-container {
+    width: 90vw;
+    height: 60vh;
+    display: flex;
+    justify-content: space-evenly;
+    transition: 0.25s linear;
 
-  .icon {
-    padding: 1vw;
-    width: 6vw;
-    img {
-      width: 100%;
+    &:hover {
+      transform: scale(0.9);
+      transition: 0.25s linear;
+    }
+
+    .portfolio-item {
+      background-color: rgb(247, 247, 247);
+      height: 100%;
+      width: 32%;
+      display: grid;
+      grid-template-rows: 50% 40% 10%;
+      justify-content: center;
+      padding: 1%;
+      border-radius: 10px;
+      box-shadow: 3px 2px 5px rgb(201, 201, 201);
+      transition: 0.25s linear;
+      filter: brightness(0.95);
+
+      &:hover {
+        transform: scale(1.11);
+        transition: 0.25s linear;
+        filter: none;
+        z-index: 500;
+      }
+
+      .portfolio-image {
+        height: 100%;
+
+        img {
+          height: auto;
+          width: 100%;
+          max-height: 100%;
+          max-width: 100%;
+          border-radius: 6px;
+        }
+      }
+      .portfolio-description {
+        padding: 0 6% 0 6%;
+        font-size: 1vw;
+
+        h1 {
+          margin: 1% 0 3% 0;
+          font-size: 175%;
+        }
+        p {
+          margin: 1%;
+        }
+      }
+      .portfolio-links {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 1vw;
+        a {
+          color: rgb(56, 56, 56);
+          font-style: bold;
+          vertical-align: middle;
+          height: 75%;
+
+          img {
+            height: 75%;
+            vertical-align: middle;
+          }
+        }
+      }
     }
   }
 }
@@ -307,8 +375,8 @@
 
     .nav-toggle {
       position: absolute;
-      left: 85vw;
-      top: 3vw;
+      left: 83%;
+      top: 90%;
       display: flex;
       height: 7vh;
       width: 7vh;
@@ -383,12 +451,12 @@
       display: flex;
       flex-direction: column;
       text-align: center;
-      font-size: 2.5vw;
+      font-size: 2vh;
       justify-content: initial;
 
       .about-title {
         width: auto;
-        font-size: 6vh;
+        font-size: 5vh;
         padding-bottom: 3vh;
       }
     }
@@ -399,11 +467,19 @@
     background-color: rgb(250, 250, 250);
     justify-content: center;
     align-items: center;
-    height: 250vh;
+    height: auto;
+
+    .title {
+      font-size: 5vh;
+      margin: 4vh;
+      padding: 0;
+      width: 100%;
+    }
 
     .skills-border {
       border-radius: 1vw;
       padding: 0.5vw;
+      margin-bottom: 10%;
 
       .skills-container {
         display: grid;
@@ -437,13 +513,12 @@
 
           .top {
             height: 10%;
+            font-size: 4vh;
           }
 
           .middle {
             height: 14vh;
-            padding: 5%;
-
-            img {
+            width: 100% img {
               height: 70%;
             }
           }
@@ -464,6 +539,7 @@
         }
 
         .design {
+          border: 0;
           border-top: 0.01vw solid rgb(173, 173, 173);
           border-bottom: 0.01vw solid rgb(173, 173, 173);
         }
@@ -472,7 +548,7 @@
   }
 
   .projects {
-    height: 60vh;
+    height: 250vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -481,18 +557,84 @@
     .title {
       font-size: 4vh;
       width: auto;
-      padding: 0 0 2vh 0;
+      padding: 0 0 0 0;
+      margin-top: 3vh;
     }
+    .portfolio-container {
+      width: 80vw;
+      height: 300vh;
 
-    .sub {
-      font-size: 2vh;
-    }
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-evenly;
+      transition: 0.25s linear;
 
-    .icon {
-      padding: 1vh;
-      width: 6vh;
-      img {
+      &:hover {
+        transform: scale(1);
+        transition: 0 linear;
+      }
+
+      .portfolio-item {
+        background-color: rgb(247, 247, 247);
+        height: 75vh;
         width: 100%;
+        display: grid;
+        grid-template-rows: 35% 50% 15%;
+        justify-content: center;
+        padding: 5%;
+        margin: 5%;
+        border-radius: 10px;
+        box-shadow: 3px 2px 5px rgb(201, 201, 201);
+        transition: 0.25s linear;
+        filter: brightness(1);
+
+        &:hover {
+          transform: scale(1);
+          transition: 0;
+          filter: none;
+          z-index: 500;
+        }
+
+        .portfolio-image {
+          height: 100%;
+
+          img {
+            height: auto;
+            width: 100%;
+            max-height: 100%;
+            max-width: 100%;
+            border-radius: 6px;
+          }
+        }
+        .portfolio-description {
+          padding: 0 6% 0 6%;
+          font-size: 2vh;
+
+          h1 {
+            margin: 1% 0 3% 0;
+            font-size: 175%;
+          }
+          p {
+            margin: 1%;
+          }
+        }
+        .portfolio-links {
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 1.8vh;
+          a {
+            color: rgb(56, 56, 56);
+            font-style: bold;
+            vertical-align: middle;
+            height: 75%;
+
+            img {
+              height: 75%;
+              vertical-align: middle;
+            }
+          }
+        }
       }
     }
   }
