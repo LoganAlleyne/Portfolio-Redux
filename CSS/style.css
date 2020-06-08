@@ -781,6 +781,7 @@
     display: inline-block;
     vertical-align: middle;
     font-size: 1.8vh;
+    padding-top: 5%;
   }
   .projects .portfolio-container .portfolio-item .portfolio-links a {
     color: #383838;
