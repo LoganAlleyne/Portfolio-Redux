@@ -518,7 +518,8 @@
 
           .middle {
             height: 14vh;
-            width: 100% img {
+            width: 100%;
+            img {
               height: 70%;
             }
           }
@@ -548,7 +549,7 @@
   }
 
   .projects {
-    height: 250vh;
+    height: 260vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -598,10 +599,10 @@
 
         .portfolio-image {
           height: 100%;
-
+          width: auto;
           img {
             height: auto;
-            width: 100%;
+            width: auto;
             max-height: 100%;
             max-width: 100%;
             border-radius: 6px;
@@ -612,7 +613,7 @@
           font-size: 2vh;
 
           h1 {
-            margin: 1% 0 3% 0;
+            margin: 3% 0 3% 0;
             font-size: 175%;
           }
           p {

@@ -649,8 +649,10 @@
   }
   .skills .skills-border .skills-container .skills-pannel .middle {
     height: 14vh;
-    width: 100% img;
-    width-height: 70%;
+    width: 100%;
+  }
+  .skills .skills-border .skills-container .skills-pannel .middle img {
+    height: 70%;
   }
   .skills .skills-border .skills-container .skills-pannel .bottom {
     height: 70%;
@@ -677,7 +679,7 @@
     border-bottom: 0.01vw solid #adadad;
   }
   .projects {
-    height: 250vh;
+    height: 260vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -755,10 +757,11 @@
   }
   .projects .portfolio-container .portfolio-item .portfolio-image {
     height: 100%;
+    width: auto;
   }
   .projects .portfolio-container .portfolio-item .portfolio-image img {
     height: auto;
-    width: 100%;
+    width: auto;
     max-height: 100%;
     max-width: 100%;
     border-radius: 6px;
@@ -768,7 +771,7 @@
     font-size: 2vh;
   }
   .projects .portfolio-container .portfolio-item .portfolio-description h1 {
-    margin: 1% 0 3% 0;
+    margin: 3% 0 3% 0;
     font-size: 175%;
   }
   .projects .portfolio-container .portfolio-item .portfolio-description p {
