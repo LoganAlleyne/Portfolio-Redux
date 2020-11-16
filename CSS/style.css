@@ -115,7 +115,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 15vh;
 }
 
 .about .about-content {
@@ -128,7 +127,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  font-size: 1vw;
+  font-size: 1.5rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -138,8 +137,8 @@
 }
 
 .about .about-content .about-title {
-  font-size: 2.5vw;
-  padding-bottom: 4vh;
+  font-size: 3.5rem;
+  padding-bottom: 2rem;
   width: 15vw;
 }
 
@@ -158,12 +157,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 110vh;
+  padding: 5rem;
+  height: auto;
 }
 
 .skills .title {
   text-align: center;
-  font-size: 2.5vw;
+  font-size: 3.5rem;
   width: 40%;
   padding: 0 0 5vh 0;
 }
@@ -177,12 +177,12 @@
   display: -ms-grid;
   display: grid;
   width: 78vw;
-  height: 80vh;
-  -ms-grid-columns: 26vw 26vw 26vw;
-      grid-template-columns: 26vw 26vw 26vw;
+  height: auto;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   background-color: white;
   border-radius: 0.75vw;
-  padding: 5vh 0 5vh 0;
+  padding: 4rem 0;
 }
 
 .skills .skills-border .skills-container .skills-pannel {
@@ -213,20 +213,20 @@
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  font-size: 2.5vw;
 }
 
 .skills .skills-border .skills-container .skills-pannel .top {
-  height: 10%;
+  height: 5rem;
+  font-size: 2.5rem;
 }
 
 .skills .skills-border .skills-container .skills-pannel .middle {
-  height: 20%;
+  height: 8rem;
   padding: 5%;
 }
 
 .skills .skills-border .skills-container .skills-pannel .middle img {
-  height: 70%;
+  height: 100%;
 }
 
 .skills .skills-border .skills-container .skills-pannel .bottom {
@@ -269,7 +269,7 @@
 }
 
 .projects {
-  height: 85vh;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -281,6 +281,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 0 0 5rem;
 }
 
 .projects .title {
@@ -291,7 +292,7 @@
 
 .projects .portfolio-container {
   width: 90vw;
-  height: 60vh;
+  height: 40rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
