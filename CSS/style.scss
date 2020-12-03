@@ -7,7 +7,6 @@
   body {
     font-family: "Raleway", sans-serif;
     width: 100vw;
-    height: 100vh;
     color: rgb(56, 56, 56);
     max-width: 100%;
     overflow-x: hidden;
@@ -42,7 +41,6 @@
   height: 100%;
 
   #particles {
-    position: absolute;
     height: 100vh;
     width: 100vw;
   }
@@ -119,7 +117,7 @@
     .about-title {
       font-size: 3.5rem;
       padding-bottom: 2rem;
-      width: 15vw;
+      width: auto;
     }
   }
 }
@@ -137,7 +135,7 @@
     text-align: center;
     font-size: 3.5rem;
     width: 40%;
-    padding: 0 0 5vh 0;
+    padding: 0 0 2rem 0;
   }
 
   .skills-border {
@@ -225,44 +223,32 @@
   align-items: center;
   text-align: center;
   flex-direction: column;
-  margin: 0 0 5rem;
+  margin: 5rem 0;
 
   .title {
-    font-size: 2.5vw;
+    font-size: 3.5rem;
     width: 40%;
-    padding: 5vh;
+    padding: 0 0 3rem;
   }
 
   .portfolio-container {
-    width: 90vw;
-    height: 40rem;
-    display: flex;
-    justify-content: space-evenly;
-    transition: 0.25s linear;
-
-    &:hover {
-      transform: scale(0.9);
-      transition: 0.25s linear;
-    }
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    grid-gap: 1rem;
 
     .portfolio-item {
       background-color: rgb(247, 247, 247);
-      height: 100%;
-      width: 32%;
+      height: atuo;
       display: grid;
-      grid-template-rows: 50% 40% 10%;
       justify-content: center;
-      padding: 1%;
       border-radius: 10px;
       box-shadow: 3px 2px 5px rgb(201, 201, 201);
       transition: 0.25s linear;
-      filter: brightness(0.95);
+      padding: 1rem;
 
-      &:hover {
-        transform: scale(1.11);
-        transition: 0.25s linear;
-        filter: none;
-        z-index: 500;
+      &:last-child {
+        align-items: center;
       }
 
       .portfolio-image {
@@ -285,13 +271,14 @@
           font-size: 175%;
         }
         p {
-          margin: 1%;
+          margin: 0.75rem 0;
         }
       }
       .portfolio-links {
         display: inline-block;
         vertical-align: middle;
         font-size: 1vw;
+        margin: 1rem 0 0.5rem 0;
         a {
           color: rgb(56, 56, 56);
           font-style: bold;
@@ -469,10 +456,11 @@
     justify-content: center;
     align-items: center;
     height: auto;
+    padding: 0;
 
     .title {
-      font-size: 5vh;
-      margin: 4vh;
+      font-size: 2rem;
+      margin: 2rem 0;
       padding: 0;
       width: 100%;
     }
@@ -509,17 +497,18 @@
             justify-content: center;
             align-items: center;
             width: 100%;
-            font-size: 6vh;
+            font-size: 14px;
           }
 
           .top {
             height: 10%;
-            font-size: 4vh;
+            font-size: 1.5rem;
           }
 
           .middle {
             height: 14vh;
             width: 100%;
+            padding: 0;
             img {
               height: 70%;
             }
@@ -527,7 +516,7 @@
 
           .bottom {
             height: 70%;
-            font-size: 2vh;
+            font-size: 14px;
             padding: 0;
             justify-content: start;
             text-align: center;
@@ -536,6 +525,7 @@
 
             ul {
               list-style: none;
+              font-size: 14px;
             }
           }
         }
@@ -550,53 +540,37 @@
   }
 
   .projects {
-    height: 260vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 2rem 0;
 
     .title {
-      font-size: 4vh;
+      font-size: 2rem;
       width: auto;
-      padding: 0 0 0 0;
-      margin-top: 3vh;
+      padding: 0 0 2rem 0;
     }
     .portfolio-container {
-      width: 80vw;
-      height: 300vh;
-
+      width: 85vw;
+      height: auto;
       display: flex;
       align-items: center;
       flex-direction: column;
       justify-content: space-evenly;
-      transition: 0.25s linear;
-
-      &:hover {
-        transform: scale(1);
-        transition: 0 linear;
-      }
 
       .portfolio-item {
         background-color: rgb(247, 247, 247);
-        height: 75vh;
+        height: auto;
         width: 100%;
         display: grid;
-        grid-template-rows: 35% 50% 15%;
+        grid-template-rows: auto auto auto;
         justify-content: center;
         padding: 5%;
-        margin: 5%;
-        border-radius: 10px;
+        border-radius: 5px;
         box-shadow: 3px 2px 5px rgb(201, 201, 201);
         transition: 0.25s linear;
-        filter: brightness(1);
-
-        &:hover {
-          transform: scale(1);
-          transition: 0;
-          filter: none;
-          z-index: 500;
-        }
 
         .portfolio-image {
           height: 100%;
@@ -606,15 +580,15 @@
             width: auto;
             max-height: 100%;
             max-width: 100%;
-            border-radius: 6px;
+            border-radius: 4px;
           }
         }
         .portfolio-description {
-          padding: 0 6% 0 6%;
-          font-size: 2vh;
+          font-size: 14px;
+          padding: 0;
 
           h1 {
-            margin: 3% 0 3% 0;
+            margin: 0.5rem 0;
             font-size: 175%;
           }
           p {
@@ -624,7 +598,7 @@
         .portfolio-links {
           display: inline-block;
           vertical-align: middle;
-          font-size: 1.8vh;
+          font-size: 14px;
           padding-top: 5%;
           a {
             color: rgb(56, 56, 56);
