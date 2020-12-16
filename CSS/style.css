@@ -229,7 +229,7 @@
 
 .skills .skills-border .skills-container .skills-pannel .bottom {
   height: 70%;
-  font-size: 1vw;
+  font-size: 20px;
   padding: 0 10% 10% 10%;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -333,7 +333,7 @@
 
 .projects .portfolio-container .portfolio-item .portfolio-description {
   padding: 0 6% 0 6%;
-  font-size: 1vw;
+  font-size: 20px;
 }
 
 .projects .portfolio-container .portfolio-item .portfolio-description h1 {
@@ -348,7 +348,7 @@
 .projects .portfolio-container .portfolio-item .portfolio-links {
   display: inline-block;
   vertical-align: middle;
-  font-size: 1vw;
+  font-size: 20px;
   margin: 1rem 0 0.5rem 0;
 }
 
@@ -376,7 +376,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1vw;
+  font-size: 20px;
 }
 
 .footer .contact,
@@ -543,7 +543,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
-    font-size: 2vh;
+    font-size: 20px;
     -webkit-box-pack: initial;
         -ms-flex-pack: initial;
             justify-content: initial;

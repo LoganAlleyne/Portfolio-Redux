@@ -43,6 +43,7 @@ window.onload = function setGradient() {
   document.getElementById("footerID").style.backgroundImage = window.gradientX;
   document.getElementById("skillsTitleID").style.backgroundImage =
     window.gradientX;
+  document.getElementById("connectID").style.backgroundImage = window.gradientX;
 };
 
 function navBackground(veiwX) {
