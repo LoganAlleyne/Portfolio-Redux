@@ -380,7 +380,9 @@
 }
 
 .footer .contact,
-.footer .resume {
+.footer .resume,
+.footer .linkedin,
+.footer .github {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -399,7 +401,9 @@
 }
 
 .footer .contact img,
-.footer .resume img {
+.footer .resume img,
+.footer .linkedin img,
+.footer .github img {
   height: 4vh;
   width: 4vh;
   padding: 0.5vh;
