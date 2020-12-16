@@ -106,7 +106,7 @@
   justify-content: center;
 
   .about-content {
-    width: 60vw;
+    width: 50vw;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -135,7 +135,7 @@
     text-align: center;
     font-size: 3.5rem;
     width: 40%;
-    padding: 0 0 2rem 0;
+    padding: 0 0 4rem 0;
   }
 
   .skills-border {
@@ -144,7 +144,7 @@
 
     .skills-container {
       display: grid;
-      width: 78vw;
+      width: 60vw;
       height: auto;
       grid-template-columns: 1fr 1fr 1fr;
       background-color: rgb(255, 255, 255);
@@ -228,13 +228,13 @@
   .title {
     font-size: 3.5rem;
     width: 40%;
-    padding: 0 0 3rem;
+    padding: 0 0 4rem;
   }
 
   .portfolio-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 80%;
+    width: 60%;
     grid-gap: 1rem;
 
     .portfolio-item {
