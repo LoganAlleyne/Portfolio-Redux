@@ -116,7 +116,7 @@
 }
 
 .about .about-content {
-  width: 50vw;
+  width: 60vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -174,7 +174,7 @@
 .skills .skills-border .skills-container {
   display: -ms-grid;
   display: grid;
-  width: 60vw;
+  width: 70vw;
   height: auto;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
@@ -293,7 +293,7 @@
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  width: 60%;
+  width: 70%;
   grid-gap: 1rem;
 }
 
