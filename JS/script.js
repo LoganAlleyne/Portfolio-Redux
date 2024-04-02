@@ -10,7 +10,7 @@ document.addEventListener(
       particleRadius: "5",
     });
     var intro = document.getElementById("landing-content");
-    intro.style.marginTop = -intro.offsetHeight / 2 + "px";
+    // intro.style.marginTop = -intro.offsetHeight / 2 + "px";
   },
   false
 );
